@@ -1,0 +1,7 @@
+#!/usr/bin/php
+<?php
+
+require 'bootstrap.php';
+
+$console = new \Application\Cli\Console();
+$console->run();
