@@ -1,3 +1,15 @@
 [submodule "library/Symfony/Component/Process"]
 	path = library/Symfony/Component/Process
 	url = git://github.com/symfony/Process.git
+[submodule "library/Symfony/Component/Finder"]
+	path = library/Symfony/Component/Finder
+	url = git://github.com/symfony/Finder.git
+[submodule "library/Symfony/Component/ClassLoader"]
+	path = library/Symfony/Component/ClassLoader
+	url = git://github.com/symfony/ClassLoader.git
+[submodule "library/Symfony/Component/Console"]
+	path = library/Symfony/Component/Console
+	url = git://github.com/symfony/Console.git
+[submodule "library/Symfony/Component/Yaml"]
+	path = library/Symfony/Component/Yaml
+	url = git://github.com/symfony/Yaml.git
