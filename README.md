@@ -11,6 +11,7 @@ What's inside?
 --------
 
 Including Symfony2 Components:
+
 * Finder - Handle files on filesystem
 * Process - Fires up shell-like commands. "It's a thin wrapper around proc php-functions"
 * Console - Write your one shell-like commands
