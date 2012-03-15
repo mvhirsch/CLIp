@@ -1,9 +1,9 @@
 <?php
 
+define('APPLICATION_PATH', realpath(__DIR__));
 require_once APPLICATION_PATH.'/../library/Symfony/Component/ClassLoader/UniversalClassLoader.php';
 use Symfony\Component\ClassLoader\UniversalClassLoader;
 
-define('APPLICATION_PATH', realpath(__DIR__));
 
 // Register autoloader
 $loader = new UniversalClassLoader();
