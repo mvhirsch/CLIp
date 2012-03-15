@@ -1,26 +1,16 @@
 <?php
 
-date_default_timezone_set('Europe/Belgrade');
+require_once APPLICATION_PATH.'/../library/Symfony/Component/ClassLoader/UniversalClassLoader.php';
+use Symfony\Component\ClassLoader\UniversalClassLoader;
 
-// Define path to application directory
-defined('APPLICATION_PATH')
-    || define('APPLICATION_PATH', realpath(dirname(__FILE__) . '/../Application'));
-    
-// Ensure library/ is on include_path
-set_include_path(implode(PATH_SEPARATOR, array(
-    realpath(APPLICATION_PATH . '/../library'),
-    get_include_path(),
-)));
-
-require_once 'Symfony/Component/HttpFoundation/UniversalClassLoader.php';
-
-use Symfony\Component\HttpFoundation\UniversalClassLoader;
+define('APPLICATION_PATH', realpath(__DIR__));
 
 // Register autoloader
 $loader = new UniversalClassLoader();
 $loader->registerNamespaces(array(
-	'Symfony' => realpath(APPLICATION_PATH . '/../library'),
-	'Application' => realpath(APPLICATION_PATH . '/..'),
-	'Test' => realpath(APPLICATION_PATH . '/../tests')
+	'Symfony' => realpath(APPLICATION_PATH.'/../library'),
+	'Application' => realpath(APPLICATION_PATH.'/..'),
+	'Test' => realpath(APPLICATION_PATH.'/../tests'),
 ));
 $loader->register();
+
